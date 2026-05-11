@@ -20,9 +20,9 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane styleClass="root-pane" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.controller">
+<BorderPane styleClass="root-pane" xmlns="http:
 
-    <!-- HEADER -->
+    
     <top>
         <VBox>
             <HBox alignment="CENTER_LEFT" spacing="14" styleClass="header-bar">
@@ -43,7 +43,6 @@
         </VBox>
     </top>
 
-    <!-- MAIN -->
     <center>
         <ScrollPane fitToWidth="true" styleClass="main-scroll">
             <VBox spacing="22" styleClass="main-content">
@@ -51,7 +50,6 @@
                     <Insets bottom="36" left="28" right="28" top="28" />
                 </padding>
 
-                <!-- INPUT PANEL -->
                 <VBox prefHeight="363.0" prefWidth="1202.0" spacing="14" styleClass="card">
                     <padding>
                         <Insets bottom="20" left="20" right="20" top="20" />
@@ -61,7 +59,6 @@
                         <font><Font name="System Bold" size="12.0" /></font>
                     </Label>
 
-                    <!-- Scenario buttons -->
                     <HBox spacing="10">
                         <Button fx:id="scenarioBtnA" onAction="#onScenarioA" style="-fx-border-color: #f5a623; -fx-border-radius: 5;" styleClass="my-btn" text="Scenario A" textFill="WHITE">
                             <cursor><Cursor fx:constant="HAND" /></cursor>
@@ -77,7 +74,7 @@
                         </Button>
                     </HBox>
 
-                    <!-- Column headers -->
+    
                     <HBox spacing="10">
                         <Label prefHeight="18.0" prefWidth="112.0" text="Process ID" />
                         <Label prefHeight="18.0" prefWidth="101.0" text="Arrival" />
@@ -87,11 +84,10 @@
 
                     <HBox prefHeight="268.0" prefWidth="1162.0">
                         <children>
-                            <!-- fx:id="processRowsContainer" — the controller manages children[0..n-2] as data rows;
-                                 the LAST child is always the action-buttons HBox -->
+                            
                             <VBox fx:id="processRowsContainer" prefHeight="164.0" prefWidth="1162.0">
                                 <children>
-                                    <!-- Row 1 -->
+                                    
                                     <HBox prefHeight="27.0" prefWidth="1114.0">
                                         <TextField prefHeight="26.0" prefWidth="105.0"><HBox.margin><Insets right="10.0" /></HBox.margin></TextField>
                                         <TextField prefHeight="26.0" prefWidth="105.0"><HBox.margin><Insets right="10.0" /></HBox.margin></TextField>
@@ -99,7 +95,7 @@
                                         <TextField prefHeight="26.0" prefWidth="105.0" />
                                         <VBox.margin><Insets bottom="10.0" /></VBox.margin>
                                     </HBox>
-                                    <!-- Row 2 -->
+                                    
                                     <HBox prefHeight="27.0" prefWidth="1114.0">
                                         <TextField prefHeight="26.0" prefWidth="105.0"><HBox.margin><Insets right="10.0" /></HBox.margin></TextField>
                                         <TextField prefHeight="26.0" prefWidth="105.0"><HBox.margin><Insets right="10.0" /></HBox.margin></TextField>
@@ -107,7 +103,7 @@
                                         <TextField prefHeight="26.0" prefWidth="105.0" />
                                         <VBox.margin><Insets bottom="10.0" /></VBox.margin>
                                     </HBox>
-                                    <!-- Row 3 -->
+                                    
                                     <HBox prefHeight="27.0" prefWidth="1114.0">
                                         <TextField prefHeight="26.0" prefWidth="105.0"><HBox.margin><Insets right="10.0" /></HBox.margin></TextField>
                                         <TextField prefHeight="26.0" prefWidth="105.0"><HBox.margin><Insets right="10.0" /></HBox.margin></TextField>
@@ -115,7 +111,7 @@
                                         <TextField prefHeight="26.0" prefWidth="105.0" />
                                         <VBox.margin><Insets bottom="10.0" /></VBox.margin>
                                     </HBox>
-                                    <!-- Row 4 -->
+                                    
                                     <HBox prefHeight="27.0" prefWidth="1114.0">
                                         <TextField prefHeight="26.0" prefWidth="105.0"><HBox.margin><Insets right="10.0" /></HBox.margin></TextField>
                                         <TextField prefHeight="26.0" prefWidth="105.0"><HBox.margin><Insets right="10.0" /></HBox.margin></TextField>
@@ -124,7 +120,7 @@
                                         <VBox.margin><Insets bottom="10.0" /></VBox.margin>
                                     </HBox>
 
-                                    <!-- Action buttons — ALWAYS the last child in processRowsContainer -->
+                                    
                                     <HBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="1162.0">
                                         <Button fx:id="addBtn" mnemonicParsing="false" onAction="#onAddProcess" style="-fx-border-color: #f5a623; -fx-border-radius: 5;" styleClass="my-btn" text="+ add process" textFill="WHITE">
                                             <HBox.margin><Insets right="15.0" /></HBox.margin>
@@ -172,7 +168,7 @@
                </padding>
             </HBox>
 
-                <!-- GANTT CHARTS -->
+                
                 <VBox spacing="14.0" styleClass="card">
 
                     <VBox styleClass="card">
@@ -199,10 +195,10 @@
                     <padding><Insets bottom="20.0" left="20.0" right="20.0" top="20.0" /></padding>
                 </VBox>
 
-                <!-- RESULTS TABLES -->
+                
                 <HBox spacing="16" styleClass="card">
 
-                    <!-- Priority table -->
+                    
                     <VBox minWidth="-Infinity" HBox.hgrow="ALWAYS">
                         <Label text="PRIORITY TABLE" textFill="#00cbff">
                             <padding><Insets bottom="8.0" /></padding>
@@ -233,7 +229,7 @@
                         </HBox>
                     </VBox>
 
-                    <!-- SRTF table -->
+                    
                     <VBox HBox.hgrow="ALWAYS">
                         <Label text="SRTF TABLE" textFill="#f5a623">
                             <font><Font name="System Bold" size="12.0" /></font>
@@ -266,7 +262,7 @@
                     <padding><Insets bottom="10.0" left="10.0" right="10.0" top="10.0" /></padding>
                 </HBox>
 
-                <!-- SUMMARY -->
+                
                 <VBox styleClass="card">
                     <Label text="SUMMARY" textFill="#ff5f5f">
                         <padding><Insets bottom="8.0" /></padding>
