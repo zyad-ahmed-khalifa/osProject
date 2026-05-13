@@ -4,7 +4,7 @@
 ---
 
 ## Team Information
-| # | Name | Role |
+| # | Name | submition commits |
 |---|------|------|
 | 1 | [zyad ahmed khalifa ahmed] | Team Lead + controller + main + testcases + screenshots |
 | 2 | [amr mohamed fathy] | scheduler |
