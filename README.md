@@ -117,7 +117,7 @@ src/main/java/com/scheduler/
 | Process ID | String | Non-empty, unique |
 | Arrival Time | Integer | ≥ 0 |
 | Burst Time | Integer | > 0 |
-| Priority | Integer | ≥ 0 (lower = higher priority) |
+| Priority | Integer | ≥ 1 (lower = higher priority) |
 
 ---
 
